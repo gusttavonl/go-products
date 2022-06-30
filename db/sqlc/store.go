@@ -11,7 +11,7 @@ type ExecuteStore struct {
 	*Queries
 }
 
-func executeNewStore(db *sql.DB) *ExecuteStore {
+func ExecuteNewStore(db *sql.DB) *ExecuteStore {
 	return &ExecuteStore{
 		db:      db,
 		Queries: New(db),
